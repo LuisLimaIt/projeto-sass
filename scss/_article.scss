@@ -15,10 +15,7 @@
         @include fontSize(22px);
         color: $dark-gray;
         letter-spacing: 1px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-        margin-left: 0;
-        margin-right: 0;
+        @extend %no-margin-left, %no-margin-right, %half-margin-top, %default-margin-bottom;
     }
 
     .breadcrumb {
